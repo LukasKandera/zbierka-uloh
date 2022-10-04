@@ -1,0 +1,22 @@
+table, th, td {
+    border: solid black 1px;
+    border-collapse: collapse;
+}
+
+.zahlavie {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+th::first-letter {
+    color: yellow;
+}
+tr:nth-child(even) {
+    background-color: #9f9f9f;
+}
+
+td:nth-child(2){
+    text-transform: uppercase;
+}

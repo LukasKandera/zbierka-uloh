@@ -14,9 +14,41 @@ th::first-letter {
     color: yellow;
 }
 tr:nth-child(even) {
-    background-color: #9f9f9f;
+    background-color: #c4bfbf;
 }
 
 td:nth-child(2){
     text-transform: uppercase;
+}
+
+.data tr:hover td {
+    background-color: #9498a1;
+}
+
+.data tr:hover td:first-child:not(:hover) {
+    color: #c2144a;
+}
+
+.data tr td:nth-child(n+4):nth-child(-n+6){
+    text-align: center;
+}
+
+.data tr:hover td:nth-child(n+4):nth-child(-n+6){
+    background-color: #3123c5;
+}
+
+.data tr td:hover:nth-child(n+4):nth-child(-n+6){
+    background-color: #36811f;
+}
+
+.data tr td:hover:nth-child(n+4) ~ td:nth-child(-n+6) {
+    background-color: #f1c40f;
+}
+
+td:nth-child(7){
+    display: none;
+}
+
+th:nth-child(7){
+    display: none;
 }
